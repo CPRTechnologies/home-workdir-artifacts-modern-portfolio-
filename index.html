@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Modern developer portfolio built with Vanilla HTML, CSS & JavaScript" />
+  <title>Alex Rivera | Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">AR<span>.</span></a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <div class="nav__close" id="nav-close">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </div>
+      </div>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <svg class="sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <div class="nav__toggle" id="nav-toggle">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero section" id="home">
+      <div class="hero__bg"></div>
+      <div class="container hero__container">
+        <div class="hero__content">
+          <p class="hero__greeting">Hi, I'm</p>
+          <h1 class="hero__title">
+            <span class="hero__name">Alex Rivera</span>
+          </h1>
+          <h2 class="hero__subtitle">
+            <span class="typed-text"></span><span class="cursor">|</span>
+          </h2>
+          <p class="hero__description">
+            I craft clean, performant, and accessible web experiences with modern Vanilla JavaScript and thoughtful design.
+          </p>
+          <div class="hero__buttons">
+            <a href="#projects" class="btn btn--primary">View Projects</a>
+            <a href="#contact" class="btn btn--outline">Get in Touch</a>
+          </div>
+          <div class="hero__social">
+            <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <div class="hero__card">
+            <div class="code-window">
+              <div class="code-window__header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="filename">portfolio.js</span>
+              </div>
+              <pre class="code-window__body"><code><span class="keyword">const</span> <span class="variable">developer</span> = {
+  <span class="property">name</span>: <span class="string">"Alex Rivera"</span>,
+  <span class="property">role</span>: <span class="string">"Frontend Developer"</span>,
+  <span class="property">skills</span>: [<span class="string">"JS"</span>, <span class="string">"CSS"</span>, <span class="string">"HTML"</span>],
+  <span class="property">passion</span>: <span class="string">"Clean code"</span>
+};
+
+<span class="keyword">function</span> <span class="function">build</span>() {
+  <span class="keyword">return</span> <span class="string">"Beautiful UIs"</span>;
+}</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <a href="#about" aria-label="Scroll to about">
+          <span></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about section" id="about">
+      <div class="container">
+        <h2 class="section__title">About Me</h2>
+        <p class="section__subtitle">A little bit about who I am</p>
+
+        <div class="about__content">
+          <div class="about__image">
+            <div class="about__img-wrapper">
+              <div class="about__placeholder">
+                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="about__text">
+            <h3>Frontend Developer & UI Enthusiast</h3>
+            <p>
+              I'm a passionate frontend developer who loves turning complex problems into simple, beautiful interfaces.
+              With a strong foundation in Vanilla JavaScript, modern CSS, and thoughtful UX, I focus on building
+              fast, accessible, and maintainable web experiences.
+            </p>
+            <p>
+              When I'm not coding, you'll find me exploring new design systems, contributing to open source,
+              or experimenting with creative coding techniques.
+            </p>
+            <div class="about__info">
+              <div class="about__info-item">
+                <span class="about__info-number">3+</span>
+                <span class="about__info-label">Years Experience</span>
+              </div>
+              <div class="about__info-item">
+                <span class="about__info-number">25+</span>
+                <span class="about__info-label">Projects Completed</span>
+              </div>
+              <div class="about__info-item">
+                <span class="about__info-number">12+</span>
+                <span class="about__info-label">Happy Clients</span>
+              </div>
+            </div>
+            <a href="#contact" class="btn btn--primary">Let's Talk</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <h2 class="section__title">Skills & Technologies</h2>
+        <p class="section__subtitle">Tools I use to bring ideas to life</p>
+
+        <div class="skills__grid">
+          <div class="skill-card" data-skill="95">
+            <div class="skill-card__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.198-2.221h9.287l.198 2.221H8.531zm.198 2.221h6.89l-.396 4.441-3.223.89-3.222-.89-.198-2.22h2.221l.099 1.11 1.1.297 1.1-.297.099-1.11H8.73l-.198-2.221z"/></svg>
+            </div>
+            <h3 class="skill-card__title">HTML5</h3>
+            <div class="skill-card__bar">
+              <div class="skill-card__progress" style="--progress: 95%"></div>
+            </div>
+            <span class="skill-card__percent">95%</span>
+          </div>
+
+          <div class="skill-card" data-skill="92">
+            <div class="skill-card__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.5L5.41 4.5l.213 2.4h10.938l-.214 2.4H8.5l.213 2.4h7.5l-.36 4.02-4.353 1.2-4.353-1.2-.24-2.7H4.5l.36 4.05L12 21.3l7.14-1.95.96-10.85z"/></svg>
+            </div>
+            <h3 class="skill-card__title">CSS3 / Sass</h3>
+            <div class="skill-card__bar">
+              <div class="skill-card__progress" style="--progress: 92%"></div>
+            </div>
+            <span class="skill-card__percent">92%</span>
+          </div>
+
+          <div class="skill-card" data-skill="90">
+            <div class="skill-card__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 0h24v24H0V0zm22.034 18.277c-.171-.172-.392-.26-.66-.26-.267 0-.49.088-.66.26-.172.171-.257.392-.257.66s.085.49.257.66c.17.172.393.26.66.26.268 0 .489-.088.66-.26.171-.17.257-.392.257-.66s-.086-.489-.257-.66zM12.5 2.5c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10-4.477-10-10-10zm0 18c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8zm1.5-12.5h-3v7h3v-7zm-1.5 9.5c-.828 0-1.5-.672-1.5-1.5s.672-1.5 1.5-1.5 1.5.672 1.5 1.5-.672 1.5-1.5 1.5z"/></svg>
+            </div>
+            <h3 class="skill-card__title">JavaScript</h3>
+            <div class="skill-card__bar">
+              <div class="skill-card__progress" style="--progress: 90%"></div>
+            </div>
+            <span class="skill-card__percent">90%</span>
+          </div>
+
+          <div class="skill-card" data-skill="85">
+            <div class="skill-card__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </div>
+            <h3 class="skill-card__title">Git & GitHub</h3>
+            <div class="skill-card__bar">
+              <div class="skill-card__progress" style="--progress: 85%"></div>
+            </div>
+            <span class="skill-card__percent">85%</span>
+          </div>
+
+          <div class="skill-card" data-skill="80">
+            <div class="skill-card__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+            </div>
+            <h3 class="skill-card__title">Responsive Design</h3>
+            <div class="skill-card__bar">
+              <div class="skill-card__progress" style="--progress: 88%"></div>
+            </div>
+            <span class="skill-card__percent">88%</span>
+          </div>
+
+          <div class="skill-card" data-skill="78">
+            <div class="skill-card__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
+            </div>
+            <h3 class="skill-card__title">Accessibility</h3>
+            <div class="skill-card__bar">
+              <div class="skill-card__progress" style="--progress: 82%"></div>
+            </div>
+            <span class="skill-card__percent">82%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <h2 class="section__title">Featured Projects</h2>
+        <p class="section__subtitle">Some of my recent work</p>
+
+        <div class="projects__grid">
+          <article class="project-card">
+            <div class="project-card__image">
+              <div class="project-card__placeholder project-card__placeholder--1">
+                <span>01</span>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <div class="project-card__tags">
+                <span>Vanilla JS</span>
+                <span>CSS Grid</span>
+                <span>API</span>
+              </div>
+              <h3 class="project-card__title">Weather Dashboard</h3>
+              <p class="project-card__description">
+                A clean, responsive weather app that fetches real-time data and displays forecasts with elegant animations.
+              </p>
+              <div class="project-card__links">
+                <a href="#" class="project-link" target="_blank" rel="noopener">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  Live Demo
+                </a>
+                <a href="#" class="project-link" target="_blank" rel="noopener">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__image">
+              <div class="project-card__placeholder project-card__placeholder--2">
+                <span>02</span>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <div class="project-card__tags">
+                <span>JavaScript</span>
+                <span>LocalStorage</span>
+                <span>UI/UX</span>
+              </div>
+              <h3 class="project-card__title">Task Manager</h3>
+              <p class="project-card__description">
+                A minimalist productivity app with drag-and-drop, filters, and persistent storage. Fully keyboard accessible.
+              </p>
+              <div class="project-card__links">
+                <a href="#" class="project-link" target="_blank" rel="noopener">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  Live Demo
+                </a>
+                <a href="#" class="project-link" target="_blank" rel="noopener">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__image">
+              <div class="project-card__placeholder project-card__placeholder--3">
+                <span>03</span>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <div class="project-card__tags">
+                <span>Canvas</span>
+                <span>Animation</span>
+                <span>Creative</span>
+              </div>
+              <h3 class="project-card__title">Particle Playground</h3>
+              <p class="project-card__description">
+                An interactive particle system built with the Canvas API. Users can manipulate physics parameters in real time.
+              </p>
+              <div class="project-card__links">
+                <a href="#" class="project-link" target="_blank" rel="noopener">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  Live Demo
+                </a>
+                <a href="#" class="project-link" target="_blank" rel="noopener">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  Code
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <h2 class="section__title">Get In Touch</h2>
+        <p class="section__subtitle">Have a project in mind? Let's talk</p>
+
+        <div class="contact__wrapper">
+          <div class="contact__info">
+            <h3>Let's build something great together</h3>
+            <p>
+              I'm currently open to freelance opportunities and interesting collaborations.
+              Feel free to reach out if you have a project in mind or just want to say hello.
+            </p>
+            <div class="contact__details">
+              <div class="contact__item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>alex@example.com</span>
+              </div>
+              <div class="contact__item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>San Francisco, CA</span>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact__form" id="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required placeholder="Your name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="your.email@example.com" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">
+              <span>Send Message</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <p class="footer__text">
+        Designed & built with <span class="heart">♥</span> by Alex Rivera
+      </p>
+      <p class="footer__copy">© <span id="year"></span> All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast">
+    <span class="toast__message"></span>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
